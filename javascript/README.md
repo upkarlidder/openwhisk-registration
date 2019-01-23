@@ -3,9 +3,26 @@
 ## Steps
 
 ## 1. IBMCloud CLI
-1. Set up IBM CLI and log in as per [directions here](https://console.bluemix.net/docs/cli/index.html#overview).
+1.1 Set up IBM CLI and log in as per [directions here](https://console.bluemix.net/docs/cli/index.html#overview).
 
-2. Ensure you have the functions plugin installed by typing `ic fn`. ic is short for ibmcloud. You should see the default help.
+1.2 Log into IBMCloud by using the following command
+```
+ic login
+API endpoint: https://api.ng.bluemix.net
+
+Email> <email that you signed up with IBMCloud with>
+
+Password>
+Authenticating...
+OK
+```
+1.3 Next, set the cloudfoundary as the target
+```
+ic target --cf
+Targeted Cloud Foundry (https://api.ng.bluemix.net)
+```
+
+1.4 Ensure you have the functions plugin installed by typing `ic fn`. ic is short for ibmcloud. You should see the default help.
 
 ```
 IBM Cloud CLI plug-in for IBM Cloud Functions
