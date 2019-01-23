@@ -7,7 +7,7 @@ Apache OpenWhisk (Incubating) is an open source, distributed Serverless platform
 ![Sample Architecture](asset/forwardjs-final-white.png)
 
 ## Application Demo
-![Sample Architecture](asset/openwhisk-registration-720.gif)
+![Sample Architecture](asset/openwhisk-registration.gif)
 ## Included Components
 
 - [IBMCloud](https://www.ibm.com/cloud/) - The application is hosted on IBMCloud
