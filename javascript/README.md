@@ -69,6 +69,12 @@ Use "wsk [command] --help" for more information about a command.
 
 ![cloudant-create-instance-1](asset/cloudant-create-instance-2.jpg)
 
+2.1.2 Once the service is created, ensure there is a credential created for you. If not, create one yourself
+
+![cloudant-create-instance-1](asset/cloudant-creds-create-1.jpg)
+
+![cloudant-create-instance-1](asset/cloudant-creds-create-2.jpg)
+
 2.2 Alternatively, you can create a Cloudant service using the CLI as follows
 ```
 ibmcloud resource service-instance-create <Cloudant-rf> cloudantnosqldb lite us-south
