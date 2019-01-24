@@ -74,7 +74,7 @@ ibmcloud resource service-instance-create <Cloudant-rf> cloudantnosqldb lite us-
 ```
 `Cloudant-rf` is the name of my instance of Cloudant.
 
-You can now create authentication key for this new service you just created
+You can now create authentication key for this new service you just created. This step is optional if you created the Cloudant service using the dashboard.
 
 ```
 ic resource service-key-create cloudantnosqldb Manager --instance-name Cloudant-rf
@@ -82,11 +82,13 @@ ic resource service-key-create cloudantnosqldb Manager --instance-name Cloudant-
 
 Once you have created Cloudant Instance, create a `testdb` database. The name is important as we will use it to bind our trigger later.
 
-
-
 2.2.3 You should see the instance in your dashboard.
 
-![cloudant-create-instance-1](asset/cloudant-create-instance-3.jpg)
+![ibmcloud-dashboard](asset/ibmcloud-dashboard.jpg)
+
+![cloudant-create-instance-1](asset/cloudant-create-instance-3-1.jpg)
+
+![cloudant-create-instance-1](asset/cloudant-create-instance-3-2.jpg)
 
 2.2.4 Click on the instance to launch the home page
 
