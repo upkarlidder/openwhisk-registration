@@ -82,7 +82,7 @@ ic resource service-key-create cloudantnosqldb Manager --instance-name Cloudant-
 
 Once you have created Cloudant Instance, create a `testdb` database. The name is important as we will use it to bind our trigger later.
 
-2.2.3 You should see the instance in your dashboard.
+2.3 You should see the instance in your dashboard.
 
 ![ibmcloud-dashboard](asset/ibmcloud-dashboard.jpg)
 
@@ -90,15 +90,15 @@ Once you have created Cloudant Instance, create a `testdb` database. The name is
 
 ![cloudant-create-instance-1](asset/cloudant-create-instance-3-2.jpg)
 
-2.2.4 Click on the instance to launch the home page
+2.4 Click on the instance to launch the home page
 
 ![cloudant-create-instance-1](asset/cloudant-create-instance-4.jpg)
 
-2.2.5 Launch the Cloudant database and click on `Create Database`.
+2.5 Launch the Cloudant database and click on `Create Database`.
 
 ![cloudant-create-instance-1](asset/cloudant-create-instance-5.jpg)
 
-2.2.6 Create a new database called `testdb`. You don't need to add any documents in this database at this point.
+2.6 Create a new database called `testdb`. You don't need to add any documents in this database at this point.
 
 ![cloudant-create-instance-1](asset/cloudant-create-instance-6.jpg)
 ## 3. Create OpenWhisk Components
