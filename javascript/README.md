@@ -60,6 +60,14 @@ Use "wsk [command] --help" for more information about a command.
 
 2.1 You can go to the catalog and create a Cloudant service. Pick the LITE plan.
 
+2.1.1 Look for `Cloudant` in the IBMCloud catalog
+
+![cloudant-create-instance-1](asset/cloudant-create-instance-1.jpg)
+
+2.1.2 Create an instance and fill out the information as below
+
+![cloudant-create-instance-1](asset/cloudant-create-instance-2.jpg)
+
 2.2 Alternatively, you can create a Cloudant service using the CLI as follows
 ```
 ibmcloud resource service-instance-create <Cloudant-rf> cloudantnosqldb lite us-south
@@ -74,13 +82,7 @@ ic resource service-key-create cloudantnosqldb Manager --instance-name Cloudant-
 
 Once you have created Cloudant Instance, create a `testdb` database. The name is important as we will use it to bind our trigger later.
 
-2.2.1 Look for `Cloudant` in the IBMCloud catalog
 
-![cloudant-create-instance-1](asset/cloudant-create-instance-1.jpg)
-
-2.2.2 Create an instance and fill out the information as below
-
-![cloudant-create-instance-1](asset/cloudant-create-instance-2.jpg)
 
 2.2.3 You should see the instance in your dashboard.
 
