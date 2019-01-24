@@ -246,7 +246,7 @@ ic fn trigger create user_changes_trigger --feed upkar-cloudant-package/changes 
 ```
 3.20 Create the rule that links the action sequence `forwardjs-dev/userchangeseq` to the cloudant `changes` feed from the `upkar-cloudant-package/changes` feed.
 ```
-ic fn rule create upkar-cloudant-changed_rule user_changes_trigger userchangeseq
+ic fn rule create upkar-cloudant-changed_rule user_changes_trigger forwardjs-dev/userchangeseq
 ```
 
 3.21 Finally, lets test the application by triggering the `user_changes_trigger`. The problem is that the `upkar-cloudant-package/read` action will need a document as an input. So we cannot simply invoke the trigger using the CLI. Instead, go to [IBMCloud Dashboard](https://console.bluemix.net/dashboard/apps) and look for the cloudant instance you created earlier.
