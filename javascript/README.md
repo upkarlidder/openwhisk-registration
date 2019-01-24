@@ -2,6 +2,7 @@
 
 ## Steps
 
+Clone [this repository](https://github.com/lidderupk/openwhisk-registration) and cd into the base directory.
 ## 1. IBMCloud CLI
 1.1 Set up IBM CLI and log in as per [directions here](https://console.bluemix.net/docs/cli/index.html#overview).
 
@@ -125,7 +126,7 @@ ic fn package create forwardjs-dev
 
 3.6 Create `send_email` action inside `forwardjs-dev` package.
 ```
-cd sendemail/
+cd javascript/sendemail/
 npm install
 zip -r sendmail.zip .
 ic fn action create forwardjs-dev/send_email --kind nodejs:default sendmail.zip
@@ -156,7 +157,7 @@ ic fn action invoke forwardjs-dev/send_email -r -p user_email "upkar.ibm.watson@
 
 3.10 Create `send_sms` action inside `forwardjs-dev` package.
 ```
-cd sendsms/
+cd javascript/sendsms/
 npm install
 zip -r sendsms.zip .
 ic fn action create forwardjs-dev/send_sms --kind nodejs:default sendsms.zip
@@ -193,12 +194,12 @@ ic fn trigger create new_user_sms_trigger
 
 3.14 Create two rules linking email and sms triggers with their corresponding actions
 
-First for `new_user_email_trigger` and `send_sms`.
+First for `new_user_email_trigger` and `send_email`
 ```
 ic fn rule create new_user_email_rule new_user_email_trigger forwardjs-dev/send_email
 ```
 
-Second for `new_user_sms_trigger` and `send_sms`.
+Second for `new_user_sms_trigger` and `send_sms`
 ```
 ic fn rule create new_user_sms_rule new_user_sms_trigger forwardjs-dev/send_sms
 ```
@@ -230,7 +231,7 @@ The `forwardjs-dev/userchangeseq` is composed of two actions
 3.17 Create the `notifyuser` action
 
 ```
-cd userchanges/
+cd javascript/userchanges/
 ic fn action create forwardjs-dev/notifyuser index.js
 ```
 
